@@ -25,9 +25,14 @@ const sidebar = [{
 module.exports = {
   title: '一米 陽光',
   description: '前端学习博客',
+  base: '/', // 基路径
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }]
   ],
+  host: '127.0.0.1',
+  port: '8080',
+  // 指定 vuepress build 的输出目录。
+	dest: '.vuepress/dist',
   themeConfig: {
     sidebarDepth: 1, //侧边栏深度
     displayAllHeaders: false, // 显示所有页面的标题链接
