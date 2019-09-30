@@ -32,7 +32,10 @@ module.exports = {
   host: '127.0.0.1',
   port: '8080',
   // 指定 vuepress build 的输出目录。
-	dest: '.vuepress/dist',
+  dest: '.vuepress/dist',
+  markdown: {
+    lineNumbers: true
+  },
   themeConfig: {
     sidebarDepth: 1, //侧边栏深度
     displayAllHeaders: false, // 显示所有页面的标题链接
