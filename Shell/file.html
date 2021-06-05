@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>文件操作 | 一米 陽光</title>
+    <meta name="description" content="前端学习博客">
+    <link rel="icon" href="/favicon.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.de3e197a.css" as="style"><link rel="preload" href="/assets/js/app.52fc96dc.js" as="script"><link rel="preload" href="/assets/js/2.01a6332a.js" as="script"><link rel="preload" href="/assets/js/9.22d19111.js" as="script"><link rel="prefetch" href="/assets/js/10.d81b557d.js"><link rel="prefetch" href="/assets/js/11.731c386a.js"><link rel="prefetch" href="/assets/js/12.6621ea38.js"><link rel="prefetch" href="/assets/js/13.e7c4e0b0.js"><link rel="prefetch" href="/assets/js/14.b968b4cf.js"><link rel="prefetch" href="/assets/js/3.3a06518c.js"><link rel="prefetch" href="/assets/js/4.6f6e2024.js"><link rel="prefetch" href="/assets/js/5.160abb82.js"><link rel="prefetch" href="/assets/js/6.974e02cb.js"><link rel="prefetch" href="/assets/js/7.71398d7d.js"><link rel="prefetch" href="/assets/js/8.69107985.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.de3e197a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">一米 陽光</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>shell命令</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Shell/basic.html" class="sidebar-link">常用命令</a></li><li><a href="/Shell/file.html" class="active sidebar-link">文件操作</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Vue</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Vue/basic.html" class="sidebar-link">Vue基础</a></li><li><a href="/Vue/Vuex.html" class="sidebar-link">Vuex基础</a></li><li><a href="/Vue/vue-router.html" class="sidebar-link">Vue-router基础</a></li><li><a href="/Vue/vuepress.html" class="sidebar-link">Vuepress基础</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Git</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Git/basic.html" class="sidebar-link">团队协作常用命令</a></li><li><a href="/Git/ssh.html" class="sidebar-link">ssh相关</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="文件操作"><a href="#文件操作" aria-hidden="true" class="header-anchor">#</a> 文件操作</h1> <ol><li>创建文件夹:mkdir</li></ol> <div class="language-sh bash line-numbers-mode"><pre class="language-sh"><code>  <span class="token comment"># 创建一个文件夹</span>
+  <span class="token function">mkdir</span> <span class="token punctuation">[</span>文件夹名称<span class="token punctuation">]</span>
+  <span class="token comment"># 如果创建一个多级目录，比如a和b文件夹不存在直接使用上述命令会报错，应该使用下述命令</span>
+  <span class="token function">mkdir</span> a/b/<span class="token punctuation">[</span>文件夹名称<span class="token punctuation">]</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ol start="2"><li>目录操作:cd</li></ol> <div class="language-sh bash line-numbers-mode"><pre class="language-sh"><code>  <span class="token comment"># 进入文件夹</span>
+  <span class="token builtin class-name">cd</span> <span class="token punctuation">[</span>文件路径<span class="token punctuation">]</span>
+  <span class="token comment"># 返回上级目录</span>
+  <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+  <span class="token comment"># 返回上两级目录</span>
+  <span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>/<span class="token punctuation">..</span>
+  <span class="token comment"># 返回进入此目录之前所在的目录</span>
+  <span class="token builtin class-name">cd</span> -
+  <span class="token comment"># 进入用户主目录</span>
+  <span class="token builtin class-name">cd</span> 或 <span class="token builtin class-name">cd</span> ～
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><ol start="3"><li>查看文件</li></ol> <div class="language-sh bash line-numbers-mode"><pre class="language-sh"><code>  <span class="token comment"># 列出当前目录下的资源</span>
+  <span class="token function">ls</span>
+  <span class="token comment"># 打开当前目录</span>
+  <span class="token function">open</span> <span class="token builtin class-name">.</span>
+  <span class="token comment"># 显示文件内容</span>
+  <span class="token function">cat</span> filename
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/Shell/basic.html" class="prev">常用命令</a></span> <span class="next"><a href="/Vue/basic.html">Vue基础</a>→
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.52fc96dc.js" defer></script><script src="/assets/js/2.01a6332a.js" defer></script><script src="/assets/js/9.22d19111.js" defer></script>
+  </body>
+</html>
